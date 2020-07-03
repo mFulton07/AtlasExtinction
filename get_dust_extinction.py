@@ -42,11 +42,15 @@ for atlasObject in listAtlasObjects:
     atlasObject["A_r"] = round(ebv * 2.271,3)
     atlasObject["A_i"] = round(ebv * 1.682,3)
 
+    #Calculating the ATLAS "c" and "o" extinction with the conversion provided in John's paper: "ATLAS: A High-cadence All-sky Survey System"
+    atlasObject["A_c"] = round((0.49 * atlasObject["A_g"]) + (0.51 * atlasObject["A_r"]),3)
+    atlasObject["A_o"] = round((0.55 * atlasObject["A_r"]) + (0.45 * atlasObject["A_i"]),3)
+
     listExtinctAtlasObjects.append(atlasObject)
 
 
 #Writing extinctions to CSV file
-extinctionFileColumns = ['ATLAS Name','RA (degrees)','Dec (degrees)','A_g','A_r','A_i']
+extinctionFileColumns = ['ATLAS Name','RA (degrees)','Dec (degrees)','A_g','A_r','A_i','A_c','A_o']
 extinctionFileName = "AtlasObjects/atlas_object_extinctions.csv"
 try:
     with open(extinctionFileName, 'w') as csvfile:
