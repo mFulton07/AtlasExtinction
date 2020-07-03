@@ -2,8 +2,8 @@
 
 Before Running AtlasExtinction make sure that:
 
-*Dustmaps has been installed in your Python Library: pip install dustmaps
-*You have cc'd into the AtlasExtinction directory
+* Dustmaps has been installed in your Python Library: pip install dustmaps
+* You have cc'd into the AtlasExtinction directory
 
 To get extinction values, populate altas_object_positions.csv with a list of ATLAS Names (optional) and RA and Dec coordinates in degrees (mandatory) and run get_dust_extinction.py.
 
