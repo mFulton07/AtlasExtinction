@@ -6,7 +6,7 @@ Before Running AtlasExtinction make sure that:
 * You have cc'd into the AtlasExtinction directory
 
 
-To get SDSS gri-passband dust extinction (Schlafly & Finkbeiner (2011)), populate altas_object_positions.csv with: 
+To get Pan-STARRS gri-passband dust extinction (Schlafly & Finkbeiner (2011)), populate altas_object_positions.csv with: 
 
 * A list of ATLAS Names (optional)
 * RA and Dec coordinates in degrees (mandatory) 

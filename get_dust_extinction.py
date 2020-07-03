@@ -37,10 +37,10 @@ for atlasObject in listAtlasObjects:
     coords = SkyCoord(ra*units.deg, dec*units.deg, frame="icrs")
     ebv = extinctionMap(coords)
 
-    #Converting to individual SDSS passband extinctions. Coefficients for conversion taken from Table 6: "F99 Reddening in Different Bandpasses" of Schlafly & Finkbeiner (2011) using RV = 3.1
-    atlasObject["A_g"] = round(ebv * 3.303,3)
-    atlasObject["A_r"] = round(ebv * 2.285,3)
-    atlasObject["A_i"] = round(ebv * 1.698,3)
+    #Converting to individual Pan-STARRS passband extinctions. Coefficients for conversion taken from Table 6: "F99 Reddening in Different Bandpasses" of Schlafly & Finkbeiner (2011) using RV = 3.1
+    atlasObject["A_g"] = round(ebv * 3.172,3)
+    atlasObject["A_r"] = round(ebv * 2.271,3)
+    atlasObject["A_i"] = round(ebv * 1.682,3)
 
     listExtinctAtlasObjects.append(atlasObject)
 
