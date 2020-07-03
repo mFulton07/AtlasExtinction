@@ -13,4 +13,4 @@ To get Pan-STARRS gri-passband dust extinction (Schlafly & Finkbeiner (2011)), p
 
 and run get_dust_extinction.py.
 
-Extinction values, along with the objects/cooridnates listed will be visible in atlas_object_extinction.csv once get_dust_extinction.py has successfully completed.
+Extinction values, along with the objects/coordinates listed will be visible in atlas_object_extinction.csv once get_dust_extinction.py has successfully completed.
